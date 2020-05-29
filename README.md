@@ -109,5 +109,3 @@ The goal of most any CTF is to obtain root access of the target machine and capt
 1. There are plenty of walkthroughs for this box online, and many different ways to tackle this box. This method focused more on the Network angle, which involved brute forcing logins with Hydra/SSH, pillaging MySQL to gain and dump important info, and spawning a root shell using Python.
 2. The Web angle, which I haven't tried myself yet, involves generating a sitemap of the HTTP server with Burpsuite and Spider, finding flags in the website's HTML, performing URL enumeration against the HTTP server with `wfuzz`, performing user enumeration against the Wordpress blog and brute-forcing the passwords of discovered users with `wpscan` (which we involved in our Network angle), and finding flags in the WordPress administrator panel.
 3. Understanding both website enumeration and network enumeration, in addition to brute-forcing and information pillaging strategies, are some of the great overarching takeaways from this project.
-
-![image](https://user-images.githubusercontent.com/55573209/83311289-60f48e00-a1d4-11ea-9ebc-72f585f03b84.png)
